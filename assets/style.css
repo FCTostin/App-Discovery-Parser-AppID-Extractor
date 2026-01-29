@@ -1,0 +1,64 @@
+:root {
+    --bg-main: #0e1117;
+    --bg-secondary: #161b22;
+    --bg-input: #0d1117;
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --accent: #58a6ff;
+    --border: #30363d;
+}
+
+.stApp {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+}
+
+.main-header {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+}
+
+.stTextArea textarea, .stTextInput input {
+    background-color: var(--bg-input) !important;
+    color: #e6edf3 !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+}
+
+[data-testid="stExpander"] {
+    background-color: var(--bg-secondary) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    margin-bottom: 10px;
+}
+
+.stMetric label {
+    color: var(--text-secondary) !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: var(--accent) !important;
+}
+
+button[kind="primary"] {
+    background-color: #ff4b4b !important;
+    color: white !important;
+    border: none !important;
+}
+
+button[kind="primary"]:hover {
+    background-color: #f20d0d !important;
+    border: none !important;
+}
+
+.stat-label {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-top: 15px;
+}
