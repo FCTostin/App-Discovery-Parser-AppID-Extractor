@@ -33,4 +33,4 @@ Many modern store pages use "Lazy Loading" (content loads only as you scroll). T
 
 1. **Clone the repository**:
    ```bash
-   git clone [https://github.com/your-username/app-discovery-parser-appid-extractor.git](https://github.com/your-username/app-discovery-parser-appid-extractor.git)
+   git clone [https://github.com/ostinua/app-discovery-parser-appid-extractor.git](https://github.com/ostinua/app-discovery-parser-appid-extractor.git)
