@@ -1,0 +1,22 @@
+name: JS Check (Chrome Extension)
+
+on: [push]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install ESLint
+        run: npm install eslint
+
+      - name: Run Lint
+        run: |
+          # Проверяем файлы: background.js, popup.js, overlay.js, utils.js
+          npx eslint background.js popup.js overlay.js utils.js --env browser,webextensions --parser-options ecmaVersion:latest
